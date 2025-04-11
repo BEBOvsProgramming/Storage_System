@@ -1,0 +1,311 @@
+/* ###################### start global rules ########################## */
+/* ######### start variables ######## */
+:root{
+    --main-color:#222;
+    --alt-color: #111;
+    --vio: rgb(108, 29, 199);
+    --shadow: 0 2px 15px rgb(0 0 0 / 25%);
+    --transition: 0.3s;
+    --radius: 5px;
+    --shadow: 0 2px 15px rgb(0 0 0 / 25%);
+
+  }
+  
+  /* end variables  */
+  
+* {
+    -webkit-box-sizing:border-box;
+    -mox-box-sizing:border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    padding:10px;
+    color:white;
+  }
+
+
+html{
+    scroll-behavior: smooth ;
+  }
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  body {
+    font-family: "Work Sans", "sans-serif";
+    background-color: var(--main-color);
+  }
+
+  
+  /* notice the blue space will mark the page area whick we will put our items inside without stepping outta it  */
+  
+  /* this will be a global container build for all the containers i will make  */
+  
+  .container{
+    margin-left: auto !important;
+    margin-right:auto !important;
+    width:80%;
+    margin-top: 100px;
+  }
+
+    /*  ############### CONTAINER media queries to make it responsive for all devices ################## */
+  
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+  /* ############################################################# */
+
+
+
+
+
+  /* ############### light mode activate ################### */
+  .light{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .light i:hover {
+    transform: scale(1.2);
+    color:white;
+}
+
+.light i{
+    font-size: 25px;
+    color:var(--vio);
+    transition: var(--transition);
+}
+
+
+
+
+/* ############### title ################### */
+.title{
+    text-align: center;
+    margin-bottom:50px;
+}
+
+/* ############### inputs section ################### */
+input,
+small {
+    border-radius: var(--radius);
+    background-color: var(--alt-color);
+    margin:5px !important;
+    text-align: center;
+    transition: var(--transition)
+}
+
+input:hover,
+input:focus{
+  transform: scale(1.1);
+}
+
+
+.inputs{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.total{
+  color:red;
+  font-size: 20px;
+}
+
+
+.name,
+.category,
+.SEARCH{
+    width: 100%;
+}
+
+button{
+    width:100%;
+    background-color: var(--vio);
+    border-radius: var(--radius);
+    margin:5px!important;
+    transition: var(--transition);
+    color: rgb(4, 241, 43) !important;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+
+/* ############### bar section ################### */
+.bar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    border-radius: var(--radius);
+    padding:0 !important;
+}
+
+.bar p{
+    border-top:1px solid ;
+    border-bottom:1px solid ;
+}
+
+.bar p:hover{
+    background-color: var(--vio);
+    color: white !important;
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+/*  ##################################### footer #################################  */
+
+.footer .container {
+  margin-top: 20px !important;
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+.footer .one,
+.footer .two,
+.footer .three {
+  display:flex;
+  flex-direction: column;
+}
+
+.footer .one h1{
+  font-size: 40px;
+  font-weight: bold;
+  color:rgb(126, 126, 252);
+
+}
+
+.footer .one p{
+  font-size: 18px;
+  line-height: 1.5;
+  padding:10px
+}
+
+.footer .one .link{
+display:flex;
+gap:10px;
+}
+
+.footer .one i{
+  background-color: #313131;
+  padding:20px;
+  font-size: 20px;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  transition: var(--transition);
+
+}
+
+.footer .fa-facebook-f{
+  color:#1a449e;
+}
+
+.footer .fa-twitter{
+  color:#1da1f2;
+}
+
+.footer .fa-linkedin-in{
+  color: #0077b5;
+}
+
+
+.footer .two{
+  align-items: center;
+
+}
+
+.footer .two a::before {
+  content: "";
+  position:absolute;
+  bottom:0;
+  right: 0;
+  height: 1px;
+  width:100%;
+  background-color: black;
+  z-index: 6;
+}
+
+.footer .two a{
+  color: #b9b9b9;
+  transition: var(--transition);
+  padding:20px;
+  position: relative;
+  font-size: 20px;
+  transition: var(--transition);
+}
+
+.footer  .two i{
+  color:rgb(126, 126, 252);
+  margin-right: 10px;
+}
+
+.footer .d{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+
+}
+.footer .three i{
+  color:rgb(126, 126, 252);  
+  margin-right: 10px;
+  font-size: 30px;
+
+}
+
+.footer .two a:hover{
+  transform: translateX(20px);
+}
+
+.footer .one i:hover{
+  background-color: white;
+}
+
+.footer h2{
+  font-size: 35px;
+  font-style: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding-top:30px !important;
+  margin-top:10px !important;
+  margin-bottom:10px !important;
+}
+
+.footer h2  .red{
+  color:red;
+}
+
+.footer h2 .blue{
+  color:rgb(126, 126, 252);
+
+}

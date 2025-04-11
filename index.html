@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>storage js 1</title>
+        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css\normalize.css">
+        <link rel="stylesheet" href="css\all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- ##################### light mode button ########################## -->
+        <a href="" class = "light" class = "off"><i class="fa-solid fa-cloud-sun"></i></a>
+
+
+        <!-- ############################# container ######################## -->
+        <div class = "container">
+            <!-- ################# title section ############## -->
+            <div class = "title">
+                <h1>Storage name here</h1>
+                <p>PUT DISCRIPTION HERE</p>
+            </div>
+
+            <input type="text" class ="name" placeholder="device name">
+
+
+            <!-- ################# inputs section ############## -->
+            <div class="inputs">
+                <input type="number" class ="Dprice" placeholder="device price">
+                <input type="number" class ="Dnumber" placeholder="device number">
+                <input type="number" class ="Dtaxs" placeholder="device taxs">
+                <input  type="number" class ="Ddiscount" placeholder=" descount-optional">
+                <input  type="number" class ="Dads" placeholder="device ads">
+                <small class = "total">  Total </small>
+
+            </div>
+        
+
+            <!-- ################# buttons section############## -->
+            <input type="text" placeholder="category" class ="category">
+            <button class ="add"> ADD </button>
+            <input onkeyup = searchmod(this.value) type="text" placeholder="search" class = "SEARCH">
+            <button class = "deleteall">Delete All</button>
+
+
+            <!-- ################# bar section ############## -->
+            <div class="bar">
+                <p>Id</p>
+                <p>Name</p>
+                <p>Price</p>
+                <p>Taxes</p>
+                <p>Ads</p>
+                <p>Discount</p>
+                <p>In-Store</p>
+                <p>Category</p>
+                <p>Update</p>
+                <p>Delete</p>
+            </div>
+<!-- ############################ footer section ################## -->
+ 
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="one">
+                    <h1>BEBO</h1>
+                    <div class="link">                
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khaled-g-mohsen" target= "_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        
+                    </div>
+                    <p> Necessitatibus quia quibusdam sed consequatur nostrum iusto velit ratione magnam perferendis voluptatum qui ab, aspernatur consequuntur veritatis, facilis, laudantium debitis!</p>
+                </div>
+    
+                <div class="two">
+                    <a href="#"><i class="fa-solid fa-angles-right"></i> Important link </a>                
+                    <a href="#"><i class="fa-solid fa-angles-right"></i> Important link </a>                
+                    <a href="#"><i class="fa-solid fa-angles-right"></i> Important link </a>                
+                    <a href="#"><i class="fa-solid fa-angles-right"></i> Important link </a>                
+                    <a href="#"><i class="fa-solid fa-angles-right"></i> Important link </a>                
+                    <a href="#"><i class="fa-solid fa-angles-right"></i> Important link </a>                
+                   
+    
+                </div>
+    
+                <div class="three">
+                    <div class="d">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Egypt-Kafr El-Sheikh,Missir</p>
+                        <i class="fa-solid fa-clock"></i>
+                        <p>  SLAVES working from 8Am to 8pm</p>
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <p> 012233554488</p>
+    
+                    </div>
+    
+                </div>
+            </div>
+            <h2>Made With <span class = "red"> Love </span> by  <span class ="blue">BEBO </span> </h2>
+        </div>
+    
+        <script src="main.js"></script>
+    </body>
